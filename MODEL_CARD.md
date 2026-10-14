@@ -104,9 +104,26 @@ El modelo destaca por su peso reducido de **39 MB** y su capacidad de inferencia
 
 ---
 
-## Referencias Bibliográficas
+## 📚 Referencias Bibliográficas
 
-```
+* **Mitchell, M., Wu, S., Zaldivar, A., Barnes, P., Vasserman, L., Hutchinson, B., Spitzer, E., Raji, I. D., & Gebru, T. (2019)**. *Model Cards for Model Reporting*. In Proceedings of the Conference on Fairness, Accountability, and Transparency (FAT* '19), pp. 220–229. ACM. Disponible en: [https://arxiv.org/abs/1810.03993](https://arxiv.org/abs/1810.03993)
+* **Zhang, C., Han, D., Qiao, Y., Kim, J. U., Bae, S. H., Lee, S., & Hong, C. S. (2023)**. *Faster Segment Anything: Towards Lightweight SAM for Mobile Applications*. arXiv preprint arXiv:2306.14289. Repositorio: [https://github.com/ChaoningZhang/MobileSAM](https://github.com/ChaoningZhang/MobileSAM)
+* **Kirillov, A., Mintun, E., Ravi, N., Mao, H., Rolland, C., Gustafson, L., Xiao, T., Whitehead, S., Berg, A. C., Lo, W. Y., Dollár, P., & Girshick, R. (2023)**. *Segment Anything*. Meta AI Research. IEEE International Conference on Computer Vision (ICCV). Disponible en: [https://arxiv.org/abs/2304.02643](https://arxiv.org/abs/2304.02643)
+* **Hugging Face Hub (2024)**. *Model Card and Dataset Card Templates*. Hugging Face Open Source Documentation. Disponible en: [https://github.com/huggingface/huggingface_hub/tree/main/src/huggingface_hub/templates](https://github.com/huggingface/huggingface_hub/tree/main/src/huggingface_hub/templates)
+* **IDECA (2024)**. *Infraestructura de Datos Espaciales para el Distrito Capital de Bogotá*. Catastro Distrital. Portal de Datos Abiertos: [https://www.ideca.gov.co](https://www.ideca.gov.co)
+
+<details>
+<summary><b>Click aquí para ver las citas en formato BibTeX</b></summary>
+
+```bibtex
+@inproceedings{mitchell2019model,
+  title={Model cards for model reporting},
+  author={Mitchell, Margaret and Wu, Simone and Zaldivar, Andrew and Barnes, Parker and Vasserman, Lucy and Hutchinson, Ben and Spitzer, Elena and Raji, Inioluwa Deborah and Gebru, Timnit},
+  booktitle={Proceedings of the Conference on Fairness, Accountability, and Transparency},
+  pages={220--229},
+  year={2019}
+}
+
 @article{zhang2023faster,
   title={Faster segment anything: Towards lightweight sam for mobile applications},
   author={Zhang, Chaoning and Han, Dongshen and Qiao, Yu and Kim, Jung Uk and Bae, Sung-Ho and Lee, SeungKyu and Hong, Choong Seon},
@@ -114,11 +131,3 @@ El modelo destaca por su peso reducido de **39 MB** y su capacidad de inferencia
   year={2023}
 }
 
-@inproceedings{mitchell2019model,
-  title={Model cards for model reporting},
-  author={Mitchell, Margaret and Wu, Simone and Zaldivar, Andrew and Barnes, Parker and Vasserman, Lucy and Hutchinson, Ben and Spitzer, Elena and Raji, Inioluwa Deborah and Gebru, Timnit},
-  booktitle={Proceedings of the conference on fairness, accountability, and transparency},
-  pages={220--229},
-  year={2019}
-}
-```
