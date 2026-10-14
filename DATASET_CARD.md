@@ -53,3 +53,10 @@ El conjunto fue compilado para calibrar y evaluar modelos ligeros de digitalizac
 
 ## Estructura de Directorios del Dataset
 
+
+---
+
+## Consideraciones de Calidad y Sesgos de Muestreo
+
+* **Condiciones lumínicas:** Las ortofotos fueron capturadas con ángulo cenital entre las 10:00 y las 14:00 horas para minimizar sombras alargadas.
+* **Sesgo de Altura Edilicia:** El dataset tiene mayor representación de edificaciones entre 1 y 4 pisos (predominantes en los sectores analizados); para rascacielos o torres de más de 15 pisos con desplazamiento por abatimiento (*building lean*), se requiere corrección por modelo digital de superficie (DSM).
