@@ -52,6 +52,27 @@ El conjunto fue compilado para calibrar y evaluar modelos ligeros de digitalizac
 ---
 
 ## Estructura de Directorios del Dataset
+## Estructura de Directorios del Dataset
+
+
+data/
+├── aoi/
+│   ├── bogota_suba_aoi.geojson        # Límite administrativo sector Suba
+│   └── bogota_bosa_aoi.geojson        # Límite administrativo sector Bosa
+├── raw_orthophotos/                   # GeoTIFFs originales (20 cm GSD)
+│   ├── suba_mosaic_rgb.tif
+│   └── bosa_mosaic_rgb.tif
+├── processed_tiles/                   # Tiles de 512x512 para inferencia
+│   ├── images/                        # Imágenes RGB (tile_001.png, ...)
+│   └── masks/                         # Máscaras binarias ráster ground truth
+├── ground_truth_vectors/              # Polígonos vectoriales verificados
+│   ├── suba_buildings_gt.geojson
+│   └── bosa_buildings_gt.geojson
+└── splits/
+    ├── train.txt
+    ├── val.txt
+    └── test.txt
+```
 
 
 ---
