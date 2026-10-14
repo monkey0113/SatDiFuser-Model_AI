@@ -1,21 +1,22 @@
-# SatDiFuser: Repurposing Generative Geospatial Diffusion Models for Discriminative Earth Observation
+# Digitalización Asistida de Polígonos con MobileSAM
 
 ## 📌 Descripción General del Modelo
-**SatDiFuser** es un marco de trabajo de vanguardia para teledetección (Remote Sensing) que aprovecha las representaciones latentes de modelos fundacionales generativos de difusión geoespacial (específicamente **DiffusionSat**) para resolver tareas discriminativas complejas como segmentación semántica y clasificación multiespectral. A través de la inversión DDIM (Denoising Diffusion Implicit Models) y estrategias de fusión jerárquica de características multiescala, SatDiFuser extrae patrones semánticos profundos capturados durante el preentrenamiento generativo, superando a los modelos discriminativos tradicionales auto-supervisados (SSL) en benchmarks estándar de la Tierra como **GEO-Bench**.
+**MobileSAM** es un modelo fundacional de visión por computador y segmentación interactiva de última generación, optimizado específicamente para operar en tiempo real sobre dispositivos con recursos computacionales limitados. Diseñado como una versión ultraligera del reconocido *Segment Anything Model (SAM)*, MobileSAM sustituye el masivo codificador original por una arquitectura basada en *TinyViT*, reduciendo su tamaño a tan solo **39 MB** (más de 60 veces más liviano) e incrementando su velocidad de inferencia hasta 50 veces sin comprometer la precisión geométrica. En el marco de este proyecto de teledetección y sistemas de información geográfica (SIG), MobileSAM se emplea para la **digitalización ágil y precisa de polígonos vectoriales** (huellas de edificaciones, parcelas agrícolas, cuerpos de agua y zonas verdes) a partir de imágenes aéreas y satelitales, transformando clics interactivos del usuario en geometrías poligonales exportables a formatos estándares como GeoJSON o Shapefile.
 
 ---
 
 ## 📑 Ficha del Modelo (Model Card)
-De conformidad con los lineamientos de *Mitchell et al. (2019)* y las directrices de documentación responsable de *Hugging Face*, la ficha técnica completa del modelo y sus conjuntos de datos se encuentra disponible en el siguiente enlace:
+En cumplimiento de las directrices metodológicas de *Mitchell et al. (2019)* sobre reporte transparente de modelos de inteligencia artificial y siguiendo la plantilla oficial de *Hugging Face Hub*, la ficha técnica completa se encuentra documentada en el siguiente archivo del repositorio:
 
 👉 **[Ver Ficha Técnica Completa (MODEL_CARD.md)](./MODEL_CARD.md)**
 
 ---
 
-## 👤 Datos del Autor de la Ficha
-* **Nombre completo:** [Nombres y Apellidos de la Estudiante]
-* **Código estudiantil / ID:** [Tu Código / ID]
-* **Correo institucional:** [tu_correo@universidad.edu.co]
-* **Programa / Asignatura:** [Nombre del Curso / Maestría o Pregrado]
+## 👤 Datos de la Autora de la Ficha
+* **Nombre de la estudiante:** [Nombres y Apellidos Completos]
+* **Código estudiantil / ID:** [Tu Código o Cédula]
+* **Correo electrónico institucional:** [tu_correo@universidad.edu.co]
+* **Asignatura / Proyecto:** [Nombre de la Asignatura / Proyecto de Grado]
+* **Programa Académico:** [Ingeniería Catastral / Geográfica / Sistemas / Maestría]
 * **Institución:** [Nombre de la Universidad]
 * **Fecha de entrega:** 14 de Octubre de 2026
