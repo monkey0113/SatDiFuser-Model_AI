@@ -52,7 +52,7 @@ El conjunto fue compilado para calibrar y evaluar modelos ligeros de digitalizac
 ---
 
 ## Estructura de Directorios del Dataset
-
+```
 
 data/
 ├── aoi/
@@ -71,7 +71,7 @@ data/
     ├── train.txt
     ├── val.txt
     └── test.txt
-
+```
 
 ---
 
