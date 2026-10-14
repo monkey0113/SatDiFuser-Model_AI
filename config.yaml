@@ -1,0 +1,16 @@
+project_name: "MobileSAM-Polygon-Cadastre-Bogota"
+model:
+  name: "MobileSAM"
+  checkpoint_path: "weights/mobile_sam.pt"
+  encoder_type: "tiny_vit"
+  device: "cpu" # o "cuda" si hay GPU disponible
+
+digitization:
+  simplify_tolerance: 0.5 # Tolerancia Douglas-Peucker en metros
+  min_polygon_area_m2: 12.0 # Filtro de artefactos menores a 12 m2
+  tile_size: 512
+  overlap: 64
+
+evaluation:
+  ground_truth_path: "data/ground_truth_vectors/"
+  output_metrics_path: "outputs/metrics_summary.csv"
