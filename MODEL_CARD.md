@@ -1,12 +1,5 @@
 
 ---
-
-# 📁 2. Archivo `MODEL_CARD.md`
-
-Copia y pega este contenido en el archivo `MODEL_CARD.md`:
-
-```markdown
----
 tags:
   - earth-observation
   - polygon-digitization
