@@ -32,3 +32,34 @@ Evaluación sobre **1.250 polígonos de validación** contrastados con la cartog
 
 ## 🗂️ Estructura del Proyecto
 MobileSAM-Polygon/ ├── MODEL_CARD.md # Ficha del modelo (Mitchell et al. 2019 + HF template) ├── DATASET_CARD.md # Ficha del dataset (HF template) ├── README.md # Este archivo principal ├── .gitignore ├── config.yaml # Configuración de AOI, umbrales y rutas ├── requirements.txt # Dependencias Python ├── data/ │ ├── aoi/ │ │ ├── bogota_suba_aoi.geojson │ │ └── bogota_bosa_aoi.geojson │ ├── ground_truth/ # Polígonos oficiales IDECA / OSM en GeoJSON │ └── raw/ # Ortofotos aéreas 0.2m / PlanetScope 3m ├── scripts/ │ ├── 01_download_aoi.py # Descarga límites y capas base de Bogotá │ ├── 02_tiling_orthophoto.py # División en tiles de 512x512 y 1024x1024 │ ├── 03_setup_mobilesam.py # Descarga de pesos de MobileSAM (39 MB) │ ├── 04_interactive_segment.py # Segmentación por clics o cajas │ ├── 05_mask_to_polygon.py # Vectorización raster -> GeoJSON (shapely) │ ├── 06_evaluate_metrics.py # Cálculo de IoU, F1 y error de área │ └── 07_generate_figures.py # Generación de mapas y matrices de error ├── notebooks/ │ ├── 01_exploratory_analysis.ipynb │ └── 02_polygon_visualization.ipynb └── outputs/ ├── polygons_geojson/ # Polígonos vectorizados generados ├── metrics_summary.csv # Resultados desagregados └── figures/ # Comparativas visuales (Pred vs GT)
+
+
+
+---
+
+## ⚙️ Pipeline de Ejecución
+
+```bash
+# 1. Clonar el repositorio
+git clone https://github.com/tu-usuario/MobileSAM-Polygon-Cadastre-Bogota.git
+cd MobileSAM-Polygon-Cadastre-Bogota
+
+# 2. Instalar dependencias
+pip install -r requirements.txt
+
+# 3. Descargar el checkpoint ligero de MobileSAM (39 MB)
+python scripts/03_setup_mobilesam.py
+
+# 4. Procesar tiles de ortofoto y generar polígonos vectoriales
+python scripts/04_interactive_segment.py --aoi suba
+python scripts/05_mask_to_polygon.py --simplify-tolerance 0.5
+
+# 5. Calcular métricas oficiales de exactitud posicional y temática
+python scripts/06_evaluate_metrics.py
+
+Python: 3.9 / 3.10 / 3.11
+Hardware: Funciona en CPU estándar (Intel i5/i7 o AMD Ryzen, 8 GB RAM). No requiere GPU obligatoria.
+Espacio en disco: < 500 MB (incluyendo modelo de 39 MB y datos de prueba).
+pip install torch torchvision
+pip install timm opencv-python shapely geopandas rasterio matplotlib
+pip install git+https://github.com/ChaoningZhang/MobileSAM.git
