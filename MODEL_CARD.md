@@ -106,7 +106,7 @@ El modelo destaca por su peso reducido de **39 MB** y su capacidad de inferencia
 
 ## Referencias Bibliográficas
 
-```bibtex
+
 @article{zhang2023faster,
   title={Faster segment anything: Towards lightweight sam for mobile applications},
   author={Zhang, Chaoning and Han, Dongshen and Qiao, Yu and Kim, Jung Uk and Bae, Sung-Ho and Lee, SeungKyu and Hong, Choong Seon},
