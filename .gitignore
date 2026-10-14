@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.env
+.ipynb_checkpoints/
+data/raw_orthophotos/
+data/processed_tiles/
+weights/*.pt
+outputs/predictions/
